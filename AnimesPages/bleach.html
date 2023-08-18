@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>bleach page</title>
+    <script src="https://code.jquery.com/jquery-3.5.1.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/hover.css/2.1.1/css/hover-min.css" type="text/css" />
+    <link href="assets/favicon/favicon.ico" rel="icon" type="image/x-icon" />
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
+      integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z"
+      crossorigin="anonymous"/>
+    <link rel="stylesheet" href="AnimePages.css">
+</head>
+<body class="bleach-page">
+  <div id="div1-bleach">
+    <h1 class="bleach-h1"> Before You Start <br>Please Enter Your Username</h1>
+    <form name="loginForm" method="post" action="onepiece.html">
+        UserName &nbsp;<input type="text" name="username"/><br/><br/>
+        <input type="button" onclick="loginFormSubmit()" value="Submit"/>
+    </form>
+</div>
+
+<div id="welcomeModal" class="modal-bleach">
+    <div class="modal-content-bleach">
+        <span class="close-bleach" onclick="closeModal()">&times;</span>
+        <p id="welcomeText"></p>
+    </div>
+</div> 
+<div class="levels">
+    <div class="card" style="width: 18rem;">
+       <img src="imagesbackground/ichigolvl1.png" alt="level1">
+       <div class="card-body">
+         <h5 class="card-title">LVL 1</h5>
+         <a href="BleachLevels/lvl1-bleach.html" class="btn btn-primary-bleach">START </a>
+       </div>
+    </div>
+     <div class="card" style="width: 18rem;">
+       <img src="imagesbackground/ichilvl2.png" alt="LEVEL2">
+       <div class="card-body">
+         <h5 class="card-title">LVL 2</h5>
+         <a href="BleachLevels/lvl2-bleach.html" class="btn btn-primary-bleach">START</a>
+       </div>
+     </div>
+     <div class="card" style="width: 18rem;">
+       <img src="imagesbackground/ichilvl3.png" alt="level3">
+       <div class="card-body">
+         <h5 class="card-title">LVL 3</h5>
+         <a href="BleachLevels/lvl3-bleach.html" class="btn btn-primary-bleach">START</a>
+       </div>
+     </div>
+   </div>
+<script>
+   function loginFormSubmit() {
+    var username = document.forms["loginForm"]["username"].value;
+    if (username) {
+        openModal("Yo "+ username + "!" +" Welcome to the world of Bleach MindSnap, where adventure awaits! ⚔️ Ready to embark on a thrilling journey? Select your desired level and let the excitement begin! 🚀🔥 <br><img src='imagesbackground/ichigo.gif' alt='GIF' width='200'>");
+        
+    } else {
+        alert("Please Enter your Username");
+    }
+}
+
+function openModal(message) {
+    var modal = document.getElementById("welcomeModal");
+    var welcomeText = document.getElementById("welcomeText");
+    welcomeText.innerHTML = message;
+    modal.style.display = "block";
+}
+
+function closeModal() {
+    var modal = document.getElementById("welcomeModal");
+    var form = document.getElementById("div1-bleach");
+    modal.style.display = "none";
+    form.style.display = "none"; // Hide the form
+}
+    
+
+
+</script>
+</body>
+</html>
+
+
+
+    

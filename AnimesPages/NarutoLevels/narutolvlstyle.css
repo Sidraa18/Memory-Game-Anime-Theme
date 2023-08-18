@@ -1,0 +1,645 @@
+@font-face {
+    font-family: myFont;
+    src: url('fonts/Venom.otf');
+   }
+
+
+  /*NARUTO LVL 1*/
+  /*STYLE THE BODY OF NARUTO LVL 1*/
+  body.naruto-lvl1{
+    background-image: url('imagesbackground/narbg.jpg');
+  
+   }
+
+   
+   .title {
+    text-align: center;
+    font-size: 80px; 
+    margin-top: 30px; 
+    color: #df5e2b;
+    font-family: myFont;
+  }
+ 
+/*Styling the startgame*/
+body.naruto-lvl1.startgame-naruto {
+    position: fixed;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 2;
+    background-color: rgba(220, 238, 247, 0.301);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  .startgame-naruto h1 {
+    display: flex;
+    align-items: center;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    background-color: #eba24e;
+    color: #FFF;
+    padding: 20px 30px;
+    font-size: 50px;
+    text-align: center;
+    border-radius: 25px;
+    cursor: pointer;
+    text-shadow: 4px 5px 11px #0000006b;
+   font-family: myFont;
+  }
+  
+  .startgame-naruto img.gif {
+    margin-left: 10px; 
+    max-height: 100px; 
+    width: 25px;
+  }
+ 
+  /*End of styling the start game div*/
+  /*Styling the TRIES div*/
+  .tries{
+    float: center;
+    width: 50%;
+    text-align: center;
+    font-size: 50px;
+    color: rgb(255, 255, 255);
+    padding-left: 80px;
+
+  }
+ /*Styling the cards*/
+ * {
+    box-sizing: border-box;
+  }
+  body {
+    font-family: myFont;
+  }
+  
+  .memory-game-blocks {
+    display: grid ;
+    width: 1100px;
+    flex-wrap: wrap;
+    margin: 0 auto;
+    grid-template-columns: repeat(4, 1fr);
+    margin-top: 20px;
+    
+  
+  }
+  .memory-game-blocks.no-clicking {
+    pointer-events: none;
+  }
+  .memory-game-blocks .game-block {
+    height: 220px;
+    width: 260px;
+    transition: transform .5s;
+    transform-style: preserve-3d;
+    cursor: pointer;
+    position: relative;
+    flex: 1 0 200px;
+    margin: 0 10px 20px;
+    border: 1px solid ;
+    border-radius: 30px;
+   
+  }
+  .memory-game-blocks .game-block .front {
+    content: url('imagesbackground/narutofronticon.jpg');
+   line-height: 200px;
+   border-radius: 30px;
+  }
+  .memory-game-blocks .game-block .front:before {
+   content:   url('imagesbackground/narutofronticon.jpg');
+   
+  }
+  .memory-game-blocks .game-block .back {
+    
+    transform: rotateY(180deg);
+  }
+  .memory-game-blocks .game-block .back img {
+     width: 100%; 
+     height: 100%; 
+     object-fit: cover; 
+    border-radius: 30px;
+
+  }
+  .memory-game-blocks .game-block .face {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    text-align: center;
+    backface-visibility: hidden;
+    /*border: 5px solid #acd1f0;*/
+    border-radius: 30px;
+  }
+  .memory-game-blocks .game-block.is-flipped,
+  .memory-game-blocks .game-block.has-match{
+    -webkit-transform: rotateY(180deg);
+    -moz-transform: rotateY(180deg);
+    transform: rotateY(180deg);
+    pointer-events: none;
+    
+  }
+/* Style for the success modal */
+.modal {
+    display: none;
+    position: fixed;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.7);
+    z-index: 1000;
+    align-items: center;
+    justify-content: center;
+    padding-top: 200px;
+  }
+  
+  .modal-content {
+    background-color: rgb(255, 255, 255);
+    padding: 20px;
+    border-radius: 10px;
+    text-align: center;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.5);
+    max-width: 400px; /* Adjust the width as needed */
+    margin: 0 auto; /* Center the modal horizontally */
+    padding-top:50px ;
+  }
+  
+  .modal-content p {
+    font-size: 18px;
+    margin-bottom: 20px;
+  }
+  
+  .modal-content img {
+    max-width: 100px;
+  }
+  
+  /* Style for the success message */
+  #successMessage {
+    color: #df5e2b;
+    font-weight: bold;
+  }
+  /*END OF STYLING bleach LEVEL 1*/
+  
+
+
+  /*Styling NARUTO LEVEL 2*/
+
+  /* Style for the timer */
+.timer {
+  display: flex;
+  float: right;
+  width: 40%;
+  text-align: right;
+  font-size: 50px;
+  color: rgb(255, 255, 255);
+  padding-right:100px; 
+}
+body.naruto-lvl2{
+    background-image: url('imagesbackground/narbg.jpg') ;
+ }
+ .title {
+    text-align: center;
+    font-size: 80px; 
+    margin-top: 30px; 
+    color: #df5e2b;
+    font-family: myFont;
+  }
+ 
+/*Styling the startgame*/
+.startgame-naruto {
+  position: fixed;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 2;
+  background-color: rgba(220, 238, 247, 0.301);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.startgame-naruto h1 {
+  display: flex;
+  align-items: center;
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  background-color: #eba24e;
+  color: #FFF;
+  padding: 20px 30px;
+  font-size: 50px;
+  text-align: center;
+  border-radius: 25px;
+  cursor: pointer;
+  text-shadow: 4px 5px 11px #0000006b;
+ font-family: myFont;
+}
+
+.startgame-naruto img.gif {
+  margin-left: 10px; 
+ height: 100px;
+  width: 170px;
+}
+
+/*End of styling the start game div*/
+/*Styling the TRIES div*/
+.tries{
+  float: center;
+  width: 50%;
+  text-align: center;
+  font-size: 50px;
+  color: rgb(255, 255, 255);
+  padding-left: 80px;
+
+}
+ 
+ /*Styling the cards*/
+ * {
+    box-sizing: border-box;
+  }
+  body {
+    font-family: myFont;
+  }
+  
+  body.naruto-lvl2 .memory-game-blocks {
+    display: grid ;
+    width: 100%;
+    grid-template-columns: repeat(6, 1fr);
+    margin-top: 20px;
+    justify-content: center;
+    gap: 0px;
+    
+  
+  }
+  .memory-game-blocks.no-clicking {
+    pointer-events: none;
+  }
+  .memory-game-blocks .game-block {
+    height: 220px;
+    width: 260px;
+    transition: transform .5s;
+    transform-style: preserve-3d;
+    cursor: pointer;
+    position: relative;
+    flex: 1 0 200px;
+    margin: 0 10px 20px;
+    border: 1px solid ;
+    border-radius: 30px;
+   
+  }
+  .memory-game-blocks .game-block .front {
+    content: url('imagesbackground/narutofronticon.jpg');
+   line-height: 200px;
+   border-radius: 30px;
+  }
+  .memory-game-blocks .game-block .front:before {
+   content:   url('imagesbackground/narutofronticon.jpg');
+   
+  }
+  .memory-game-blocks .game-block .back {
+    
+    transform: rotateY(180deg);
+  }
+  .memory-game-blocks .game-block .back img {
+     width: 100%; 
+     height: 100%; 
+     object-fit: cover; 
+    border-radius: 30px;
+
+  }
+  .memory-game-blocks .game-block .face {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    text-align: center;
+    backface-visibility: hidden;
+    /*border: 5px solid #acd1f0;*/
+    border-radius: 30px;
+  }
+  .memory-game-blocks .game-block.is-flipped,
+  .memory-game-blocks .game-block.has-match{
+    -webkit-transform: rotateY(180deg);
+    -moz-transform: rotateY(180deg);
+    transform: rotateY(180deg);
+    pointer-events: none;
+    
+  }
+/* Style for the success modal */
+.modal {
+    display: none;
+    position: fixed;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.7);
+    z-index: 1000;
+    align-items: center;
+    justify-content: center;
+    padding-top: 200px;
+  }
+  
+  .modal-content {
+    background-color: rgb(255, 255, 255);
+    padding: 20px;
+    border-radius: 10px;
+    text-align: center;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.5);
+    max-width: 400px; /* Adjust the width as needed */
+    margin: 0 auto; /* Center the modal horizontally */
+    padding-top:50px ;
+  }
+  
+  .modal-content p {
+    font-size: 18px;
+    margin-bottom: 20px;
+  }
+  
+  .modal-content img {
+    max-width: 100px;
+  }
+  
+  /* Style for the success message */
+  #successMessage {
+    color: #df5e2b;
+    font-weight: bold;
+    font-size: 30px;
+  }
+  /* Apply custom styles to the navigation links */
+.navbar-nav .nav-link {
+    font-size: 18px; /* Increase font size */
+    padding: 10px 20px; /* Add padding to increase the clickable area */
+    transition: background-color 0.3s, color 0.3s; /* Add smooth transition effect */
+    border-radius: 10px;
+    margin: 0 20px; /* Add margin between the buttons */
+    font-size: 25px;
+    color: white !important;
+  }
+  
+  /* Style the active link */
+  .navbar-nav .nav-item.active .nav-link {
+    background-color: #df5e2b; /* Change background color of active link */
+    color: #fff; /* Change text color of active link */
+  }
+  
+  /* Add hover effect to navigation links */
+  .navbar-nav .nav-link:hover {
+    background-color:#e7b0b0bd; /* Change background color on hover */
+    color: white; /* Change text color on hover */
+  }
+  
+  /* Make the navigation buttons bigger */
+  .navbar-nav .nav-link {
+    padding: 15px 30px; /* Increase padding to make the buttons bigger */
+  }
+  /*END OF STYLING THE NAVBAR*/
+
+
+
+
+  /*Styling NARUTO LEVEL 3*/
+body.naruto-lvl3{
+    background-image: url('imagesbackground/narbg.jpg') ;
+ }
+ .title {
+    text-align: center;
+    font-size: 80px; 
+    margin-top: 30px; 
+    color: #df5e2b;
+    font-family: myFont;
+  }
+ 
+/*Styling the startgame*/
+.startgame-naruto {
+  position: fixed;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 2;
+ background-color: rgba(220, 238, 247, 0.301);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.startgame-naruto h1 {
+  display: flex;
+  align-items: center;
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  background-color: #eba24e;
+  color: #FFF;
+  padding: 20px 30px;
+  font-size: 50px;
+  text-align: center;
+  border-radius: 25px;
+  cursor: pointer;
+  text-shadow: 4px 5px 11px #0000006b;
+ font-family: myFont;
+}
+
+.startgame img.gif {
+  margin-left: 10px; 
+  max-height: 80px; 
+}
+ 
+  /*End of styling the start game div*/
+  /*Styling the TRIES div*/
+  .tries{
+    float: center;
+    width: 50%;
+    text-align: center;
+    font-size: 50px;
+    color: rgb(255, 255, 255);
+    padding-left: 80px;
+
+  }
+ /*Styling the cards*/
+ * {
+    box-sizing: border-box;
+  }
+  body {
+    font-family: myFont;
+  }
+  
+  body.naruto-lvl3 .memory-game-blocks {
+    display: grid ;
+    width: 100%;
+    grid-template-columns: repeat(6, 1fr);
+    margin-top: 20px;
+    justify-content: center;
+    gap: 0 ;  
+  }
+
+
+  .memory-game-blocks.no-clicking {
+    pointer-events: none;
+  }
+  .memory-game-blocks .game-block {
+    height: 220px;
+    width: 260px;
+    transition: transform .5s;
+    transform-style: preserve-3d;
+    cursor: pointer;
+    position: relative;
+    flex: 1 0 200px;
+    margin: 0 10px 20px;
+    border: 1px solid ;
+    border-radius: 30px;
+   
+  }
+  .memory-game-blocks .game-block .front {
+    content: url('imagesbackground/narutofronticon.jpg');
+   line-height: 200px;
+   border-radius: 30px;
+  }
+  .memory-game-blocks .game-block .front:before {
+   content:   url('imagesbackground/narutofronticon.jpg');
+   
+  }
+  .memory-game-blocks .game-block .back {
+    
+    transform: rotateY(180deg);
+  }
+  .memory-game-blocks .game-block .back img {
+     width: 100%; 
+     height: 100%; 
+     object-fit: cover; 
+    border-radius: 30px;
+
+  }
+  .memory-game-blocks .game-block .face {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    text-align: center;
+    backface-visibility: hidden;
+    /*border: 5px solid #acd1f0;*/
+    border-radius: 30px;
+  }
+  .memory-game-blocks .game-block.is-flipped,
+  .memory-game-blocks .game-block.has-match{
+    -webkit-transform: rotateY(180deg);
+    -moz-transform: rotateY(180deg);
+    transform: rotateY(180deg);
+    pointer-events: none;
+    
+  }
+/* Style for the success modal */
+.modal {
+    display: none;
+    position: fixed;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.7);
+    z-index: 1000;
+    align-items: center;
+    justify-content: center;
+    padding-top: 200px;
+  }
+  
+  .modal-content {
+    background-color: rgb(255, 255, 255);
+    padding: 20px;
+    border-radius: 10px;
+    text-align: center;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.5);
+    max-width: 400px; /* Adjust the width as needed */
+    margin: 0 auto; /* Center the modal horizontally */
+    padding-top:50px ;
+  }
+  
+  .modal-content p {
+    font-size: 18px;
+    margin-bottom: 20px;
+  }
+  
+  .modal-content img {
+    max-width: 100px;
+  }
+  
+/* Style for the success message */
+#successMessage {
+    color: #df5e2b;
+    font-weight: bold;
+    font-size: 40px;
+  }
+  /* Style for the close button in the success modal */
+.close-modal-btn {
+    padding: 10px 20px;
+    background-color: #df5e2b;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+  }
+  
+  .close-modal-btn:hover {
+    background-color: #c44b1d; /* Change the color when hovering */
+  }
+/* Style for the timer */
+.timer {
+    display: flex;
+    float: right;
+    width: 40%;
+    text-align: right;
+    font-size: 50px;
+    color: rgb(255, 255, 255);
+    padding-right:100px; 
+}
+
+
+
+  /* Style for the time's up modal */
+  #timeUpModal {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.7);
+    justify-content: center;
+    align-items: center;
+    z-index: 9999;
+  }
+
+  .modal-content {
+    background-color: white;
+    padding: 20px;
+    border-radius: 10px;
+    text-align: center;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.3);
+    max-width: 400px;
+  }
+
+  #timeUpMessage {
+    font-size: 30px;
+    margin-bottom: 20px;
+  }
+
+  .close-modal-btn {
+    background-color: #f44336;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 25px;
+  }
+
+
+
+
+
+  

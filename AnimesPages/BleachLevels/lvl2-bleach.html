@@ -1,0 +1,445 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bleach level 2</title>
+    <script src="https://code.jquery.com/jquery-3.5.1.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/hover.css/2.1.1/css/hover-min.css" type="text/css" />
+    
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
+      integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z"
+      crossorigin="anonymous"/>
+    <link rel="stylesheet" href="bleachlvlstyle.css">
+</head>
+<body class="bleach-lvl2">
+  <h1 class="title">Bleach LVL 2</h1>
+  <nav class="position-relative bg-grey navbar navbar-expand-lg navbar-dark">
+    <a class="navbar-brand" href="#"></a>
+    <button
+      class="navbar-toggler"
+      type="button"
+      data-toggle="collapse"
+      data-target="#navbarSupportedContent"
+      aria-controls="navbarSupportedContent"
+      aria-expanded="false"
+      aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav mx-auto">
+            <li class="nav-item">
+               <!---- <a class="nav-link" href="Main.html">HOME <span class="sr-only">(current)</span></a>--->
+            </li>
+            <li class="nav-item ">
+                <a class="nav-link" href="lvl1-bleach.html">LEVEL 1 <span class="sr-only">(current)</span></a>
+            </li>
+            <li class="nav-item active">
+                <a class="nav-link" href="lvl2-bleach.html">LEVEL 2 <span class="sr-only">(current)</span></a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="lvl3-bleach.html">LEVEL 3 <span class="sr-only">(current)</span></a>
+            </li>
+        </ul>
+    </div>
+</nav>
+<!------End of navbar------>
+<!----TIMER SECTION-->
+<div class="timer">
+  Time Left: <span id="timer">60</span> seconds
+</div>
+<!---END OF TIMER SECTION-->
+<!---Tries-->
+<div class="tries">
+  Wrong Tries: <span>0</span>
+</div>
+<!---End of Tries-->
+
+
+<!----START GAME DIV-->
+<div class="startgame">
+  <h1>Start Game <img src="imagesbackground/bleachstart.gif" alt="startgif" class="gif"></h1>
+</div>
+<!----END OF START GAME DIV-->
+
+<!-----MEMORY GAME CARDS ONE PIECE LEVEL 1-->
+<div class="memory-game-blocks">
+  <div class="game-block" data-strawhats="ichi">
+    <div class="face front"></div>
+    <div class="face back">
+      <img src="lvl1.pics/ichi.jpg" alt="">
+    </div>
+  </div>
+  <div class="game-block" data-strawhats="ichi">
+    <div class="face front"></div>
+    <div class="face back">
+      <img src="lvl1.pics/ichi.jpg" alt="">
+    </div>
+  </div>
+  <div class="game-block" data-strawhats="inoue">
+    <div class="face front"></div>
+    <div class="face back">
+      <img src="lvl1.pics/inoue.jpg" alt="">
+    </div>
+  </div>
+  <div class="game-block" data-strawhats="inoue">
+    <div class="face front"></div>
+    <div class="face back">
+      <img src="lvl1.pics/inoue.jpg" alt="">
+    </div>
+  </div>
+  <div class="game-block" data-strawhats="renji">
+    <div class="face front"></div>
+    <div class="face back">
+      <img src="lvl1.pics/renji.jpg" alt="">
+    </div>
+  </div>
+  <div class="game-block" data-strawhats="renji">
+    <div class="face front"></div>
+    <div class="face back">
+      <img src="lvl1.pics/renji.jpg" alt="">
+    </div>
+  </div>
+  <div class="game-block" data-strawhats="rukia">
+    <div class="face front"></div>
+    <div class="face back">
+      <img src="lvl1.pics/rukia.jpg" alt="">
+    </div>
+  </div>
+  <div class="game-block" data-strawhats="rukia">
+    <div class="face front"></div>
+    <div class="face back">
+      <img src="lvl1.pics/rukia.jpg" alt="">
+    </div>
+  </div>
+  <div class="game-block" data-strawhats="urahara">
+    <div class="face front"></div>
+    <div class="face back">
+      <img src="lvl1.pics/urahara.jpg" alt="">
+    </div>
+  </div>
+  <div class="game-block" data-strawhats="urahara">
+    <div class="face front"></div>
+    <div class="face back">
+      <img src="lvl1.pics/urahara.jpg" alt="">
+    </div>
+  </div>
+  <div class="game-block" data-strawhats="nel">
+    <div class="face front"></div>
+    <div class="face back">
+      <img src="lvl1.pics/nel.jpg" alt="">
+    </div>
+  </div>
+  <div class="game-block" data-strawhats="nel">
+    <div class="face front"></div>
+    <div class="face back">
+      <img src="lvl1.pics/nel.jpg" alt="">
+    </div>
+  </div>
+  <div class="game-block" data-strawhats="grimjow">
+    <div class="face front"></div>
+    <div class="face back">
+      <img src="lvl2.pics/grimmjow.jpg" alt="">
+    </div>
+  </div>
+  <div class="game-block" data-strawhats="grimjow">
+    <div class="face front"></div>
+    <div class="face back">
+      <img src="lvl2.pics/grimmjow.jpg" alt="">
+    </div>
+  </div>
+  <div class="game-block" data-strawhats="zaraki">
+    <div class="face front"></div>
+    <div class="face back">
+      <img src="lvl2.pics/zaraki.jpg" alt="">
+    </div>
+  </div>
+  <div class="game-block" data-strawhats="zaraki">
+    <div class="face front"></div>
+    <div class="face back">
+      <img src="lvl2.pics/zaraki.jpg" alt="">
+    </div>
+  </div>
+  <div class="game-block" data-strawhats="jugram">
+    <div class="face front"></div>
+    <div class="face back">
+      <img src="lvl2.pics/jugram.jpg" alt="">
+    </div>
+  </div>
+  <div class="game-block" data-strawhats="jugram">
+    <div class="face front"></div>
+    <div class="face back">
+      <img src="lvl2.pics/jugram.jpg" alt="">
+    </div>
+  </div>
+</div>
+<!-----End Of Memory cards of one piece lvl1-->
+<!----GAME Sounds-->
+ <audio id="success" src="sounds/gdmatchblch.mp3" preload="auto"></audio>
+ <audio id="fail" src="sounds/losesound.mp3" preload="auto"></audio>
+
+<!---END OF GAME SOUNDS-->
+<!-- Add a modal for the success message -->
+<div id="successModal" class="modal">
+  <div class="modal-content">
+      <p id="successMessage">Congratulations! You've matched all cards! <br> You Are An Amazing Soul Reaper Now!!⚔️ <img src="imagesbackground/win.gif" alt="wingif"></p>
+      <button id="closeModalBtn" class="close-modal-btn">Close</button>
+    </div>
+</div>
+
+<!-- Add an audio element for success sound -->
+<audio id="Win" src="sounds/winsoundbleach.mp3" preload="auto"></audio>
+<!----end of CELEBRATIONS OF WIN-->
+  
+<!----TIME IS UP-->
+<div id="timeUpModal" class="modal">
+  <div class="modal-content">
+    <p id="timeUpMessage">Time's up! Game over!! <br> <img src="imagesbackground/timesupbleach.gif" alt="."></p>
+    <button id="closeTimeUpModalBtn" class="close-modal-btn">Close</button>
+  </div>
+</div>
+<!---END OF TIME IS UP SECTION-->
+
+
+
+ <!------JS FOR THE CARDS-->
+<script>
+  //TIMER SECTION
+  const timerElement = document.getElementById("timer");
+    const timerDuration = 60; // Change this value as needed
+    let timeRemaining = timerDuration;
+    let timerInterval; // Declare the timerInterval variable here
+
+    function updateTimer() {
+        timerElement.textContent = timeRemaining ;
+         
+        if (timeRemaining === 0) {
+            clearInterval(timerInterval);
+            showTimeUpModal();
+       }
+    }
+    
+    function startTimer() {
+  // Start the timer interval
+  timerInterval = setInterval(() => {
+    timeRemaining--;
+    updateTimer();
+  }, 1000);
+}
+   
+    //END OF TIMER
+
+
+  // Function to show the time's up modal
+function showTimeUpModal() {
+   // Get the time's up modal element
+   const timeUpModal = document.getElementById("timeUpModal");
+
+// Show the time's up modal
+timeUpModal.style.display = "block";
+
+
+
+// Add event listener for the close button of the time's up modal
+const closeTimeUpModalBtn = document.getElementById("closeTimeUpModalBtn");
+closeTimeUpModalBtn.addEventListener("click", () => {
+   // Close the time's up modal
+   timeUpModal.style.display = "none";
+});
+
+}
+  // Function to close the success modal
+function closeSuccessModal() {
+  var modal = document.getElementById("successModal");
+  modal.style.display = "none";
+  // stop the win sound
+  var successSound = document.getElementById("Win");
+  successSound.stop();
+}
+ // Function to open the success modal
+function openSuccessModal() {
+  const modal = document.getElementById("successModal");
+  modal.style.display = "block";
+ 
+  
+  // Play the success sound
+  var successSound = document.getElementById("Win");
+  successSound.play();
+  // Close the modal when the close button is clicked
+  var closeModalBtn = document.getElementById("closeModalBtn");
+  closeModalBtn.addEventListener("click", closeSuccessModal);
+
+  // Close the modal after 8 seconds
+ // setTimeout(closeSuccessModal, 8000); // 8000 milliseconds =8000 seconds
+}
+
+
+// Check if all cards are matched
+function checkAllMatched() {
+  var allMatched = blocks.every(block => block.classList.contains('has-match'));
+  if (allMatched) {
+    openSuccessModal();
+  }
+  
+}
+
+
+
+// Find the start game button element using its class name
+const startGameButton = document.querySelector(".startgame h1");
+
+// Function to start the game
+function startGame() {
+
+  
+    // Show card faces
+    blocks.forEach((block) => {
+      block.classList.add("is-flipped");
+    });
+
+    // Remove card faces after 5 seconds
+    setTimeout(() => {
+      blocks.forEach((block) => {
+        block.classList.remove("is-flipped");
+      });
+
+      // Start the timer
+  startTimer(); //  start the timer
+
+
+    }, 5000); // 5000 milliseconds = 5 seconds
+    // Remove the start game from the screen
+    document.querySelector(".startgame").remove();
+  }
+  // Attach click event handler to the start game button
+  startGameButton.addEventListener("click", function () {
+   console.log("Button clicked");
+    startGame(); // Call the function to start the game
+    // Remove the event listener to prevent duplicate listeners
+    startGameButton.removeEventListener("click", arguments.callee);
+
+ });
+
+ 
+ // Effect Duration
+let duration = 1000;
+
+// Select Blocks Container
+let blocksContainer = document.querySelector(".memory-game-blocks");
+
+// Create Array From Game Blocks
+let blocks = Array.from(blocksContainer.children);
+
+
+// Create Range Of Keys
+
+let orderRange = Array.from(Array(blocks.length).keys());
+shuffle(orderRange);
+ // Add Order Css property to game blocks
+ blocks.forEach((block, index) => {
+
+  //Add CSS order property
+  block.style.order = orderRange[index];
+
+  //Add click Event
+  block.addEventListener('click' , function(){
+  //Trigger the flip block Function
+  flipBlock(block);
+
+
+  })
+
+  });
+    
+    //Flip Block Function
+  function flipBlock(selectedBlock){
+
+    //Add class is flipped
+     selectedBlock.classList.add('is-flipped');
+    
+     //Collect all flipped cards
+     let allFlippedBlocks = blocks.filter(flippedBlock => flippedBlock.classList.contains('is-flipped'));
+     
+     //If theres two selected blocks
+     if (allFlippedBlocks.length === 2){
+
+      //Stop clicking Function
+       stopClicking();
+
+     // Check Matched block Function
+     checkMatchedBlocks(allFlippedBlocks[0] , allFlippedBlocks[1]);
+     // Check if all cards are matched
+     checkAllMatched();
+    }
+
+
+  }
+   // Stop clicking Function
+   function stopClicking() {
+    
+    //Add Class No clicking on Main Container
+    blocksContainer.classList.add('no-clicking');
+    
+    setTimeout(()=>{
+      //Remove class No Clicking after the duration
+      blocksContainer.classList.remove('no-clicking');
+
+    }, duration);
+
+   }
+   //Check Matched Blocks
+   function checkMatchedBlocks(firstBlock, secondBlock){
+    let triesElement = document.querySelector('.tries span');
+    
+    if (firstBlock.dataset.strawhats === secondBlock.dataset.strawhats){
+      firstBlock.classList.remove('is-flipped');
+      secondBlock.classList.remove('is-flipped');
+
+      firstBlock.classList.add('has-match');
+      secondBlock.classList.add('has-match');
+      
+      document.getElementById('success').play();
+
+    } else {
+      triesElement.innerHTML = parseInt(triesElement.innerHTML) + 1;
+       setTimeout(() =>{
+        firstBlock.classList.remove('is-flipped');
+        secondBlock.classList.remove('is-flipped');
+       }, duration);
+
+       document.getElementById('fail').play();
+
+    
+  } 
+}
+  
+
+
+ //Shuffle function
+  function shuffle(array){
+    //Settings Vars
+    let current = array.length,
+    temp,
+    random;
+    while(current > 0){
+      //Get random Number
+      random= Math.floor(Math.random() * current);
+      //Decrease Length By one
+      current--;
+     
+       // Swap elements
+     temp = array[current];
+      array[current] = array[random];
+      array[random] = temp
+    }
+  }
+  
+  
+
+
+
+</script>
+
+</body>

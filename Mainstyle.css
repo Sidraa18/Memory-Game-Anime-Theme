@@ -1,0 +1,167 @@
+@font-face {
+    font-family: myFont;
+    src: url('fonts/Sister.otf');
+}
+
+/* Style for the footer background and text */
+footer {
+    width: 100%;
+    text-align: center;
+    padding: 25px 0;
+    background: #4f565800;
+    font-weight: 300;
+}
+ 
+  
+  /* Style for the social media buttons */
+  .btn-floating {
+    font-size: 20px;
+    width: 40px;
+    height: 40px;
+    line-height: 40px;
+    text-align: center;
+    border-radius: 50%;
+    transition: background-color 0.3s;
+   
+  }
+  
+  .btn-floating:hover {
+    background-color: #555;
+  }
+  
+  /* Style for the footer content */
+  .text {
+    color: black;
+    font-size: 20px;
+    padding-left: 10px;
+  }
+  
+  /* Style for the heart icon */
+  .fa-heart {
+    color: #ff4242;
+    padding-left: 5px;
+  }
+  
+  /* Add padding to the footer content */
+  .text-center {
+    padding: 5px 0 ;
+    color: #555;
+    font-size: 17px;
+  }
+  /*end of styling the footer*/
+html {
+    min-height: 100vh;
+}
+
+body {
+/*background-image: url('images.strawhats/backg.jpg');*/
+  font-family: tomahackregular;
+  max-width: 1400px;
+  overflow-x: hidden;
+  margin: auto;
+  background: rgb(2,50,61);
+background: linear-gradient(90deg, rgba(2,50,61,1) 0%, rgba(9,120,121,1) 32%, rgba(0,198,255,1) 100%);
+}
+
+.title{
+    text-align: center;
+    font-family:myFont ;
+    font-weight: bold;
+    font-style: normal;
+    font-size: 140px;
+    color: whitesmoke;
+    text-shadow: 2px 2px 0px #000000b8;
+    margin: auto;
+    padding-bottom: 20px;
+    letter-spacing: 15px;
+    
+}
+
+p.instruction{
+    color: black;
+    font-size: 25px;
+    background:lightblue;
+    margin: 0px 0px 16px;
+    padding: 10px 20px;
+    border-radius: 20px;
+    text-align: center;
+
+}
+p.choosing{
+    color: whitesmoke;
+    font-size: 50px;
+    padding-top: 20px;
+    padding-bottom: 40px;
+    font-family: myFont;
+
+}
+.instruction img{
+    display:block;
+    margin: 0px auto;
+    max-width: 100%;
+    height: auto;
+ 
+}
+
+.instruction b {
+    font-weight: bold;
+    color: #333;
+    font-size: 1.2em;
+    font-family: myFont;
+    letter-spacing: 5px;
+  }
+/* Add these styles to your CSS */
+
+.mainrow {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap:  150px;
+    flex-wrap: wrap;
+    margin-top: 20px;
+    
+}
+
+.card {
+    background-color:#ffffff75;
+    border: 1px solid #ddd;
+    border-radius: 10px;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+}
+.card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0px 8px 12px rgba(0, 0, 0, 0.2);
+}
+
+.card img {
+    max-width: 100%;
+    height: auto;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+}
+
+.card-body {
+    padding: 20px;
+    text-align: center;
+}
+
+.card-title {
+    font-size: 24px;
+    margin-bottom: 10px;
+}
+
+.btn-primary {
+    background-color: #007bff;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    color: #fff;
+    font-weight: bold;
+    text-decoration: none;
+    transition: background-color 0.3s;
+}
+
+.btn-primary:hover {
+    background-color: #0056b3;
+}
