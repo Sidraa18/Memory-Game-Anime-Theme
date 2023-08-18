@@ -15,7 +15,7 @@
 
 
 ## I-What is the website about?
-Our Anime Memory Game features a diverse range of anime-themed cards, each adorned with iconic characters from various anime series. From beloved classics to contemporary hits, you'll encounter characters from shows that have captured the hearts of millions. Engage with characters from worlds of action, adventure, fantasy, and more as you strive to uncover matching pairs and achieve victory.
+My Anime MindSnap Game features a diverse range of anime-themed cards, each adorned with iconic characters from various anime series. From beloved classics to contemporary hits, you'll encounter characters from shows that have captured the hearts of millions. Engage with characters from worlds of action, adventure, fantasy, and more as you strive to uncover matching pairs and achieve victory.
 
 
 ## II-Multiple Levels of Fun:
